@@ -1,12 +1,36 @@
 gallery
 	div.controls
 		span.wide.info Source URL
+		span.mini.jump-to
+			button.jump-over Skip
 		span.mini
-			button.jump-first X
+			button.jump-first First
 		span.mini
-			button.jump-last Y
+			button.jump-last Last
 		span.mini.sort-switch
 			button Sort Reverse
+		span.mini
+			label Fit
+				select.fit
+					option(
+						value="sizing-fit-none"
+					) None
+					option(
+						value="sizing-fit-width"
+					) Width
+					option(
+						value="sizing-fit-height"
+					) Height
+					option(
+						value="sizing-fit-both"
+					) Both
+		span.mini
+			label Sidebar
+				input.show-thumbs(
+					type="checkbox"
+					checked="true"
+				)
+
 	div.flex
 		div.left
 			button.left-inside.arrow-left ⇜

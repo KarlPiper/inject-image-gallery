@@ -17,10 +17,22 @@
 
   
 <gallery>
-  <div class="controls"><span class="wide info">Source URL</span><span class="mini">
-      <button class="jump-first">X</button></span><span class="mini">
-      <button class="jump-last">Y</button></span><span class="mini sort-switch">
-      <button>Sort Reverse</button></span></div>
+  <div class="controls"><span class="wide info">Source URL</span><span class="mini jump-to">
+      <button class="jump-over">Skip</button></span><span class="mini">
+      <button class="jump-first">First</button></span><span class="mini">
+      <button class="jump-last">Last</button></span><span class="mini sort-switch">
+      <button>Sort Reverse</button></span><span class="mini">
+      <label>Fit
+        <select class="fit">
+          <option value="sizing-fit-none">None</option>
+          <option value="sizing-fit-width">Width</option>
+          <option value="sizing-fit-height">Height</option>
+          <option value="sizing-fit-both">Both</option>
+        </select>
+      </label></span><span class="mini">
+      <label>Sidebar
+        <input class="show-thumbs" type="checkbox" checked="true"/>
+      </label></span></div>
   <div class="flex">
     <div class="left">
       <button class="left-inside arrow-left">⇜</button>
